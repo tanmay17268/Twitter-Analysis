@@ -35,9 +35,11 @@ While collecting the tweets there were 2 main challenges:<br />
 <br />
 Also keep in mind that we need to overload the on_data() method of the StreamListener class so as to send the tweets to a MongoDB collection.
 <br />
-While finding the top 5 named entities, the most frequently occurred named entity was BTS ARMY, which is a fandom. But while finding news for the same, very few news articles were available. Therefore, I printed top 15 named entities and chose those on which news articles were also available.
-
+While finding the top 5 named entities, the most frequently occurred named entity was BTS ARMY, which is a fandom. But while finding news for the same, very few news articles were available. Therefore, I printed top 15 named entities and chose those on which news articles were also available. I also converted all the keywords to lower case before adding them to a dictionary.
 <br />
+
+
+<br /><br /><br />
 I learnt MongoDB from Tutorials Point. The link for the same is https://www.tutorialspoint.com/mongodb/index.htm.<br />
 I learnt to use tweepy from the documentation of tweepy present on GitHub. https://github.com/tweepy/tweepy <br />
 For finding the named enitites, I learnt natural language processing using the NLTK module from the YouTube tutorials https://www.youtube.com/watch?v=FLZvOKSCkxY&list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL.<br />
