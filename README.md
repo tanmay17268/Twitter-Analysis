@@ -2,7 +2,7 @@
 
 A short description on every file:-
 
-1. sample_tweets.py
+1. sample_tweets.py<br />
    It collects a random sample of 10K tweets using the Twitter API and prints them on the command line.
 2. random_tweets.py
    It collects a random sample of 10k tweets using the Twitter API and stores them in a MongoDB collection named tweets.
