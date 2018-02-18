@@ -37,6 +37,8 @@ Also keep in mind that we need to overload the on_data() method of the StreamLis
 <br />
 While finding the top 5 named entities, the most frequently occurred named entity was BTS ARMY, which is a fandom. But while finding news for the same, very few news articles were available. Therefore, I printed top 15 named entities and chose those on which news articles were also available. I also converted all the keywords to lower case before adding them to a dictionary.
 <br />
+<br />
+I collected a sample of 1000 tweets and 20 news articles corresponding to every named entity. And then analysed the data by comparing the sentiment of each news using TextBlob. Finally to represent the data graphically I plotted a graph using the matplotlib library of Python.
 
 
 <br /><br /><br />
