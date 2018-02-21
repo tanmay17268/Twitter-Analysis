@@ -61,7 +61,11 @@ n=input("Enter a named Entity: ")
 if (namedEntity(n)!=False):
     arr1,arr3,arr4=news(n)
     TwitStream=tweepy.Stream(oah,Stream_Listener())
-    TwitStream.filter(track=n,languages=["en"])
+    while (c!=20):
+        try:
+            TwitStream.filter(track=n,languages=["en"])
+        except:
+            c=0
     pos,neg,neu,positive,negative,neutral=[],[],[],0,0,0
     for news in arr1:
         senti=textblob.TextBlob(news['title'].translate(non_bmp_map))
