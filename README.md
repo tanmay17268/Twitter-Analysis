@@ -20,6 +20,9 @@ A short description on every file:-
    news sentiments for the common named-entities. It also prints how the TextBlob analyses for a positive, negative or neutral sentiment.
 8. sentiment_analysis_and_comparison_with_illustrations.py<br />
    It prints the comparison of twitter and news sentiments along with the graphical interpretation.
+9. FINAL_CODE.py <br />
+   It takes a named entity as input, fetches the tweets and the news articles on the fly and prints the sentiment analysis comparison for the same as well as plot a graph showing the comparison.
+   
 <br />
 <br />
 Get your own twitter API from https://apps.twitter.com/ and replace the "PUT_YOURUT_YOUR_CONSUMER_KEY_BEFORE_EXECUTING_THE_CODE" text from the code with your Keys.
@@ -35,6 +38,7 @@ While collecting the tweets there were 2 main challenges:<br />
 <br />
 Also keep in mind that we need to overload the on_data() method of the StreamListener class so as to send the tweets to a MongoDB collection.
 <br />
+<br />
 While finding the top 5 named entities, the most frequently occurred named entity was BTS ARMY, which is a fandom. But while finding news for the same, very few news articles were available. Therefore, I printed top 15 named entities and chose those on which news articles were also available. I also converted all the keywords to lower case before adding them to a dictionary.
 <br />
 <br />
@@ -48,5 +52,7 @@ For finding the named enitites, I learnt natural language processing using the N
 To extract news from a news source, I used the following link https://newsapi.org/docs/get-started.<br />
 For performing a Sentiment analysis, I used the textblob library of python. http://textblob.readthedocs.io/en/dev/ <br />
 Later I learnt matplotlib to plot graphs in python.<br />
-For making a webApp I am learning Django from https://www.youtube.com/watch?v=FNQxxpM1yOs&list=PLQVvvaa0QuDeA05ZouE4OzDYLHY-XH-Nd&index=1.
-I hope I will complete my last task in a day.
+For making a webApp I learnt Django from https://www.youtube.com/watch?v=FNQxxpM1yOs&list=PLQVvvaa0QuDeA05ZouE4OzDYLHY-XH-Nd&index=1.
+<br />
+<br />
+Finally I deployed the app on Heroku and thus completing all my tasks.
