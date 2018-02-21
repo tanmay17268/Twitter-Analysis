@@ -75,9 +75,12 @@ if (namedEntity(n)!=False):
             negative+=1
         else:
             neutral+=1
-    pos.append(positive*5)
-    neg.append(negative*5)
-    neu.append(neutral*5)
+    total=positive+negative+neutral
+    if total==0:
+        total=1
+    pos.append((positive*100)/total)
+    neg.append((negative*100)/total)
+    neu.append((neutral*100)/total)
     positive,negative,neutral=0,0,0
     for news in arr3:
         senti=textblob.TextBlob(news['title'].translate(non_bmp_map))
@@ -87,9 +90,12 @@ if (namedEntity(n)!=False):
             negative+=1
         else:
             neutral+=1
-    pos.append(positive*5)
-    neg.append(negative*5)
-    neu.append(neutral*5)
+    total=positive+negative+neutral
+    if total==0:
+        total=1
+    pos.append((positive*100)/total)
+    neg.append((negative*100)/total)
+    neu.append((neutral*100)/total)
     positive,negative,neutral=0,0,0
     for news in arr4:
         senti=textblob.TextBlob(news['title'].translate(non_bmp_map))
@@ -99,9 +105,12 @@ if (namedEntity(n)!=False):
             negative+=1
         else:
             neutral+=1
-    pos.append(positive*5)
-    neg.append(negative*5)
-    neu.append(neutral*5)
+    total=positive+negative+neutral
+    if total==0:
+        total=1
+    pos.append((positive*100)/total)
+    neg.append((negative*100)/total)
+    neu.append((neutral*100)/total)
     positive,negative,neutral=0,0,0
     for tweet in arr2:
         senti=textblob.TextBlob(tweet.translate(non_bmp_map))
