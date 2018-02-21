@@ -61,7 +61,7 @@ n=input("Enter a named Entity: ")
 if (namedEntity(n)!=False):
     arr1,arr3,arr4=news(n)
     TwitStream=tweepy.Stream(oah,Stream_Listener())
-    while (c!=20):
+    while (c!=100):
         try:
             TwitStream.filter(track=n,languages=["en"])
         except:
