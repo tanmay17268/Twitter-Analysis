@@ -28,9 +28,9 @@ Get your own twitter API from https://apps.twitter.com/ and replace the "PUT_YOU
 Understanding the code...
 <br />
 While collecting the tweets there were 2 main challenges:<br />
-1. we need to convert the non-bmp charachters like emoticons, so that the are printable on the command line. For this we mapped the every    charachter outside the BMP range to a replacement charachter.
+1. we need to convert the non-bmp charachters like emoticons, so that they are printable on the command line. For this we mapped the every    charachter outside the BMP range to a replacement charachter.
    <br />
-   Other way could have been to clean the tweet by removing links and special characters using simple regex statements.
+   Other way could have been to clean the tweet by removing links and special characters using simple regex statements.<br />
 2. While collecting random tweets, tweets of any language like russian, arabic, japanese etc. were collected. So I applied a language        filter so that tweets in only English language could be collected.
 <br />
 Also keep in mind that we need to overload the on_data() method of the StreamListener class so as to send the tweets to a MongoDB collection.
