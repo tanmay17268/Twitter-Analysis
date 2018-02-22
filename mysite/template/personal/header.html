@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Twitter analyis</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<link rel="stylesheet" href="{% static 'personal/signin.css' %}" type = "text/css"/>
+	<link rel="icon" href="{% static 'personal/img/twitter.ico' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+    <meta name="author" content="">
+</head>
+
+
+<body class="text-center" style="background-color:#f6f6f6">
+	<form class="form-signin" action="/search/" method="get">
+      <img class="mb-4" src="{% static 'personal/img/asdf.svg' %}" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Sentiment Analysis and Comparison</h1>
+      <label for="inputPassword" class="sr-only">Enter a named entity</label>
+      <input type="text" name="q" id="namedEntity" class="form-control" placeholder="Enter a named entity" required>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" value="Search">Search</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+    </form>
+    <div>
+      {% block content %}
+      {% endblock %}
+    </div>
+</body>
+
+</html>

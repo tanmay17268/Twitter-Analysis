@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Comparison</title>
+    <meta charset="utf-8">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+    <link rel="stylesheet" href="{% static 'personal/starter-template.css' %}" type = "text/css"/>
+    <link rel="icon" href="{% static 'personal/img/twitter.ico' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  </head>
+
+  <body>
+
+    <main role="main" class="container">
+
+      <div class="starter-template" style="background-color:#f6f6f6">
+        <h1>Sentiment Analysis and Comparison</h1>
+        <div>
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+
+    </main><!-- /.container -->
+
+  </body>
+</html>
